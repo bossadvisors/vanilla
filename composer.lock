@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a31a9f8486fff36dcb815b50b722f5c",
+    "content-hash": "6f8e6b91a3bac6021424ffc745d6dcdb",
     "packages": [
         {
             "name": "chrisjean/php-ico",
@@ -774,8 +774,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:vanilla/garden-message-queue.git",
+                "url": "https://github.com/vanilla/garden-message-queue.git",
                 "reference": "ee0a099a6a45319a707669a6576755bf5c44ea0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilla/garden-message-queue/zipball/ee0a099a6a45319a707669a6576755bf5c44ea0e",
+                "reference": "ee0a099a6a45319a707669a6576755bf5c44ea0e",
+                "shasum": ""
             },
             "require": {
                 "kaecyra/app-common": "^1.0",
@@ -790,6 +796,7 @@
                     "Garden\\MessageQueue\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1072,8 +1079,14 @@
             "version": "dev-feature/job-shareable-interfaces",
             "source": {
                 "type": "git",
-                "url": "git@github.com:vanilla/queue-interop.git",
+                "url": "https://github.com/vanilla/queue-interop.git",
                 "reference": "d19b4411cd075b1fdc3e591f7d174d4d4a7c8a5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilla/queue-interop/zipball/d19b4411cd075b1fdc3e591f7d174d4d4a7c8a5c",
+                "reference": "d19b4411cd075b1fdc3e591f7d174d4d4a7c8a5c",
+                "shasum": ""
             },
             "require": {
                 "php": ">=7.0"
@@ -1084,6 +1097,7 @@
                     "Garden\\QueueInterop\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
