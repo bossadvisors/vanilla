@@ -279,6 +279,9 @@ class Gdn_Dispatcher extends Gdn_Pluggable {
         } else {
             $this->dispatcher->render($request, $response);
         }
+
+        // Trigger an event once the dispatch process has completed
+        $this->fireEvent('AfterDispatch');
     }
 
     /*
