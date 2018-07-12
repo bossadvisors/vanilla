@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f02241d58decb9f4d862a92bee6a7af2",
+    "content-hash": "2a31a9f8486fff36dcb815b50b722f5c",
     "packages": [
         {
             "name": "chrisjean/php-ico",
@@ -125,6 +125,52 @@
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
             "time": "2017-06-27T22:17:23+00:00"
+        },
+        {
+            "name": "kaecyra/app-common",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kaecyra/app-common.git",
+                "reference": "2f141faba6b43916e10159cc967e0e74efb2afa7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kaecyra/app-common/zipball/2f141faba6b43916e10159cc967e0e74efb2afa7",
+                "reference": "2f141faba6b43916e10159cc967e0e74efb2afa7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/container": "^1.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kaecyra\\AppCommon\\": "src"
+                },
+                "files": [
+                    "src/map/functions.general.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Gunter",
+                    "email": "tim@vanillaforums.com",
+                    "homepage": "https://vanillaforums.com"
+                }
+            ],
+            "description": "Common app base.",
+            "homepage": "https://github.com/kaecyra/app-common",
+            "keywords": [
+                "app-common"
+            ],
+            "time": "2018-03-05T15:54:16+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -644,6 +690,46 @@
             "time": "2017-05-05T17:46:16+00:00"
         },
         {
+            "name": "vanilla/garden-db",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vanilla/garden-db.git",
+                "reference": "f59c10a8720c431ba3899791b19b73b34ceaae91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilla/garden-db/zipball/f59c10a8720c431ba3899791b19b73b34ceaae91",
+                "reference": "f59c10a8720c431ba3899791b19b73b34ceaae91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "vanilla/garden-schema": "^1.7.5"
+            },
+            "require-dev": {
+                "bobthecow/faker": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Garden\\Db\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Todd Burry",
+                    "email": "todd@vanillaforums.com"
+                }
+            ],
+            "description": "A light but powerful database abstraction layer.",
+            "time": "2018-03-05T18:27:54+00:00"
+        },
+        {
             "name": "vanilla/garden-http",
             "version": "v1.1.3",
             "source": {
@@ -682,6 +768,39 @@
             ],
             "description": "An unbloated HTTP client library for building RESTful API clients.",
             "time": "2017-06-20T21:44:22+00:00"
+        },
+        {
+            "name": "vanilla/garden-message-queue",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:vanilla/garden-message-queue.git",
+                "reference": "ee0a099a6a45319a707669a6576755bf5c44ea0e"
+            },
+            "require": {
+                "kaecyra/app-common": "^1.0",
+                "php": ">=7.0.0",
+                "vanilla/garden-container": ">=1.3.4",
+                "vanilla/garden-db": "^0.1.0",
+                "vanilla/queue-interop": "dev-feature/job-shareable-interfaces"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Garden\\MessageQueue\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Vachaviolos",
+                    "email": "eric.v@vanillaforums.com"
+                }
+            ],
+            "description": "A message queue implementation for Vanilla.",
+            "time": "2018-07-10T19:58:57+00:00"
         },
         {
             "name": "vanilla/garden-password",
@@ -947,6 +1066,35 @@
             ],
             "description": "A composer-compatible fork of the NBBC BBCode parsing library.",
             "time": "2016-04-26T18:19:47+00:00"
+        },
+        {
+            "name": "vanilla/queue-interop",
+            "version": "dev-feature/job-shareable-interfaces",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:vanilla/queue-interop.git",
+                "reference": "d19b4411cd075b1fdc3e591f7d174d4d4a7c8a5c"
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Garden\\QueueInterop\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Gunter",
+                    "email": "tim@vanillaforums.com"
+                }
+            ],
+            "description": "Queue interop.",
+            "time": "2018-05-29T18:07:35+00:00"
         },
         {
             "name": "vanilla/vanilla-connect",
@@ -2609,7 +2757,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "vanilla/queue-interop": 20,
+        "vanilla/garden-message-queue": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

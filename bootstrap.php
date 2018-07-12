@@ -250,6 +250,9 @@ $dic->setInstance('Garden\Container\Container', $dic)
     ->setShared(true)
 ;
 
+// Bootstrap the MessageQueue component
+\Garden\MessageQueue\JobQueue::bootstrap($dic);
+
 // Run through the bootstrap with dependencies.
 $dic->call(function (
     Container $dic,
