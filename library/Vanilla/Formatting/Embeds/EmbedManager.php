@@ -9,6 +9,7 @@ namespace Vanilla\Formatting\Embeds;
 use Exception;
 use Gdn_Cache;
 use InvalidArgumentException;
+use Vanilla\Attributes;
 use Vanilla\PageScraper;
 
 /**
@@ -201,6 +202,10 @@ class EmbedManager {
 
         if ($data) {
             $this->cache->store($cacheKey, $data, [Gdn_Cache::FEATURE_EXPIRY => self::CACHE_EXPIRY]);
+        }
+
+        if (empty($data['attributes'])) {
+            $data['attributes'] = new Attributes();
         }
 
         return $data;
