@@ -464,6 +464,7 @@ $richEditor-mobileEmbedBreakPoint: 550px !default;
 
 // Nub styles
 .richEditor-nubPosition {
+    transition: all 0.1s ease;
     position: absolute;
     display: flex;
     align-items: flex-start;
@@ -480,6 +481,7 @@ $richEditor-mobileEmbedBreakPoint: 550px !default;
 }
 
 .richEditor-nub {
+    transition: all 0.1s ease;
     position: relative;
     display: block;
     width: $richEditor-nub_width;
@@ -496,6 +498,24 @@ $richEditor-mobileEmbedBreakPoint: 550px !default;
 // Orientation specific styles
 
 .richEditor-toolbarContainer {
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    &.shouldTransition {
+        transition: none;
+    }
+
+    &.shouldTransition.isActive {
+        transition: transform 0.1s ease, opacity 0.1s ease, top 0.1s ease, left 0.1s ease;
+    }
+
+    &.isActive {
+        opacity: 1;
+        z-index: 1;
+        pointer-events: initial;
+    }
+
     &.isUp {
         transform: translateY(-$richEditor-menu_offset);
 

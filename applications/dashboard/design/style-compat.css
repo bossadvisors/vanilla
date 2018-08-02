@@ -1185,6 +1185,8 @@ label.checkbox input.checkbox-input {
 }
 
 .richEditor-nubPosition {
+  -webkit-transition: all 0.1s ease;
+          transition: all 0.1s ease;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1212,6 +1214,8 @@ label.checkbox input.checkbox-input {
 }
 
 .richEditor-nub {
+  -webkit-transition: all 0.1s ease;
+          transition: all 0.1s ease;
   position: relative;
   display: block;
   width: 12px;
@@ -1221,6 +1225,28 @@ label.checkbox input.checkbox-input {
   box-shadow: 0 0 5px 1px #eee;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
   background: #fff;
+}
+
+.richEditor-toolbarContainer {
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.richEditor-toolbarContainer.shouldTransition {
+  -webkit-transition: none;
+          transition: none;
+}
+
+.richEditor-toolbarContainer.shouldTransition.isActive {
+  -webkit-transition: -webkit-transform 0.1s ease, opacity 0.1s ease, top 0.1s ease, left 0.1s ease;
+          transition: transform 0.1s ease, opacity 0.1s ease, top 0.1s ease, left 0.1s ease;
+}
+
+.richEditor-toolbarContainer.isActive {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: initial;
 }
 
 .richEditor-toolbarContainer.isUp {
