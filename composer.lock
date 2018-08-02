@@ -127,52 +127,6 @@
             "time": "2017-06-27T22:17:23+00:00"
         },
         {
-            "name": "kaecyra/app-common",
-            "version": "v1.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kaecyra/app-common.git",
-                "reference": "2f141faba6b43916e10159cc967e0e74efb2afa7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kaecyra/app-common/zipball/2f141faba6b43916e10159cc967e0e74efb2afa7",
-                "reference": "2f141faba6b43916e10159cc967e0e74efb2afa7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0",
-                "psr/container": "^1.0",
-                "psr/log": "~1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Kaecyra\\AppCommon\\": "src"
-                },
-                "files": [
-                    "src/map/functions.general.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tim Gunter",
-                    "email": "tim@vanillaforums.com",
-                    "homepage": "https://vanillaforums.com"
-                }
-            ],
-            "description": "Common app base.",
-            "homepage": "https://github.com/kaecyra/app-common",
-            "keywords": [
-                "app-common"
-            ],
-            "time": "2018-03-05T15:54:16+00:00"
-        },
-        {
             "name": "michelf/php-markdown",
             "version": "1.7.0",
             "source": {
@@ -543,16 +497,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.12",
+            "version": "v3.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0"
+                "reference": "810af2d35fc72b6cf5c01116806d2b65ccaaf2e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
-                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/810af2d35fc72b6cf5c01116806d2b65ccaaf2e2",
+                "reference": "810af2d35fc72b6cf5c01116806d2b65ccaaf2e2",
                 "shasum": ""
             },
             "require": {
@@ -598,7 +552,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-03T23:18:14+00:00"
+            "time": "2018-07-26T11:19:56+00:00"
         },
         {
             "name": "tburry/pquery",
@@ -775,16 +729,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilla/garden-message-queue.git",
-                "reference": "ee0a099a6a45319a707669a6576755bf5c44ea0e"
+                "reference": "127d7938b024f881998dc245e0c693a70a454ee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilla/garden-message-queue/zipball/ee0a099a6a45319a707669a6576755bf5c44ea0e",
-                "reference": "ee0a099a6a45319a707669a6576755bf5c44ea0e",
+                "url": "https://api.github.com/repos/vanilla/garden-message-queue/zipball/127d7938b024f881998dc245e0c693a70a454ee2",
+                "reference": "127d7938b024f881998dc245e0c693a70a454ee2",
                 "shasum": ""
             },
             "require": {
-                "kaecyra/app-common": "^1.0",
                 "php": ">=7.0.0",
                 "vanilla/garden-container": ">=1.3.4",
                 "vanilla/garden-db": "^0.1.0",
@@ -807,7 +760,7 @@
                 }
             ],
             "description": "A message queue implementation for Vanilla.",
-            "time": "2018-07-10T19:58:57+00:00"
+            "time": "2018-08-02T16:08:05+00:00"
         },
         {
             "name": "vanilla/garden-password",
@@ -1080,12 +1033,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vanilla/queue-interop.git",
-                "reference": "d19b4411cd075b1fdc3e591f7d174d4d4a7c8a5c"
+                "reference": "62b9d06330eceb6455a7eb7d321de85fb99f1084"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vanilla/queue-interop/zipball/d19b4411cd075b1fdc3e591f7d174d4d4a7c8a5c",
-                "reference": "d19b4411cd075b1fdc3e591f7d174d4d4a7c8a5c",
+                "url": "https://api.github.com/repos/vanilla/queue-interop/zipball/62b9d06330eceb6455a7eb7d321de85fb99f1084",
+                "reference": "62b9d06330eceb6455a7eb7d321de85fb99f1084",
                 "shasum": ""
             },
             "require": {
@@ -1108,7 +1061,7 @@
                 }
             ],
             "description": "Queue interop.",
-            "time": "2018-05-29T18:07:35+00:00"
+            "time": "2018-08-02T16:05:42+00:00"
         },
         {
             "name": "vanilla/vanilla-connect",
@@ -1905,16 +1858,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.7",
+            "version": "5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce"
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
+                "reference": "6f9a3c8bf34188a2b53ce2ae7a126089c53e0a9f",
                 "shasum": ""
             },
             "require": {
@@ -1960,7 +1913,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-05-29T13:50:43+00:00"
+            "time": "2018-07-13T03:27:23+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -2523,16 +2476,16 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v3.4.12",
+            "version": "v3.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "d2ce52290b648ae33b5301d09bc14ee378612914"
+                "reference": "edda5a6155000ff8c3a3f85ee5c421af93cca416"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/d2ce52290b648ae33b5301d09bc14ee378612914",
-                "reference": "d2ce52290b648ae33b5301d09bc14ee378612914",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/edda5a6155000ff8c3a3f85ee5c421af93cca416",
+                "reference": "edda5a6155000ff8c3a3f85ee5c421af93cca416",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2525,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16T12:49:49+00:00"
+            "time": "2018-07-26T09:06:28+00:00"
         },
         {
             "name": "theseer/tokenizer",
